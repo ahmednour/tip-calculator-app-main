@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <div class="content">
+        <div class="title">
+            <a href=""> <img src="img/logo.svg" alt="clac logo" srcset=""></a>
+        </div>
+        <div class="calcBox">
+            <div class="leftBox">
+                <div class="formcontrol">
+                    <label for="bill"> Bill </label>
+                    <input type="text" id="bill">
+                </div>
+                <div class="BoxButton">
+                    <label for="">Bill Select Tip %</label>
+                    <div class="Buttonbody">
+                        <a href="">5%</a>
+                        <a href="">10%</a>
+                        <a href="">15%</a>
+                        <a href="">25%</a>
+                        <a href="">50%</a>
+                        <a href="" contenteditable="true">Custom</a>
+                    </div>
+                </div>
+                <div class="peopleBox">
+                    <div class="formcontrol">
+                        <label for="bill"> Number of People  </label>
+                        <input type="text" id="bill">
+                    </div>
+                </div>
+            </div>
+            <div class="rightBox">
+                <div class="reasult">
+                    <div class="amount">
+                        <label for="">Tip Amount  <br><small>/ person</small></label>
+                        <div class="amountR">
+                            <span>$</span>
+                            <span class="nmberR">0.00</span>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <label for="">Total  <br><small>/ person</small></label>
+                        <div class="amountR">
+                            <span>$</span>
+                            <span class="nmberR">0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="restButton">RESET</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
