@@ -1,0 +1,198 @@
+// varaiables 
+$Mobile: 375px;
+$Desktop: 1440px;
+//  Colors
+// // Primary
+$StrongCyan: hsl(172, 67%, 45%);
+// //  Neutral
+$VeryDarkCyan: hsl(183, 100%, 15%);
+$DarkGrayishCyan1: hsl(186, 14%, 43%);
+$DarkGrayishCyan2: hsl(184, 14%, 56%);
+$LightGrayishCyan1: hsl(185, 41%, 84%);
+$LightGrayishCyan2: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+//Typography
+$Fontsize: 24px;
+$Family:'Space Mono',
+monospace;
+// reset 
+@import url(reset.scss);
+// body 
+body {
+    font-size: $Fontsize;
+    font-family: $Family;
+    background-color: $LightGrayishCyan1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    height: 100vh;
+    .content {
+        width: 70%;
+        text-align: left;
+        .title {
+            text-align: center;
+            img {
+                margin: 0 auto 50px;
+            }
+        }
+        .calcBox {
+            width: 100%;
+            background-color: $White;
+            box-shadow: 0 5px 5px $LightGrayishCyan1;
+            padding: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-size: 14px;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+            .leftBox {
+                width: 50%;
+                color: $DarkGrayishCyan1;
+                padding: 20px 50px 20px 20px;
+                .formcontrol {
+                    width: 100%;
+                    margin-bottom: 40px;
+                    label {
+                        display: block;
+                        margin-bottom: 10px;
+                    }
+                    input {
+                        border: 2px solid $LightGrayishCyan2;
+                        background-color: $LightGrayishCyan2;
+                        height: 35px;
+                        padding: 10px;
+                        position: relative;
+                        direction: rtl;
+                        font-size: $Fontsize;
+                        color: $VeryDarkCyan;
+                        font-weight: 600;
+                        width: 100%;
+                        border-radius: 5px;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+                        background-image: url("../img/icon-dollar.svg");
+                        background-repeat: no-repeat;
+                        background-position: 20px center;
+                        &:hover,
+                        &:focus,
+                        &:active,
+                        &:focus-visible {
+                            border: 2px solid $StrongCyan;
+                            cursor: pointer;
+                            outline: none;
+                        }
+                    }
+                }
+                .BoxButton {
+                    .Buttonbody {
+                        margin-top: 20px;
+                        margin-bottom: 45px;
+                        display: grid;
+                        grid-template-columns: 32% 32% 32%;
+                        grid-gap: 15px;
+                        a {
+                            background-color: $VeryDarkCyan;
+                            color: $White;
+                            padding: 10px;
+                            text-align: center;
+                            font-size: $Fontsize;
+                            font-weight: 600;
+                            text-decoration: none;
+                            border-radius: 5px;
+                            -webkit-border-radius: 5px;
+                            -moz-border-radius: 5px;
+                            -ms-border-radius: 5px;
+                            -o-border-radius: 5px;
+                            &:hover {
+                                background-color: $StrongCyan;
+                                color: $VeryDarkCyan;
+                            }
+                            &:last-child {
+                                background-color: $LightGrayishCyan2;
+                                color: $DarkGrayishCyan2;
+                                font-weight: bold;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                .peopleBox {
+                    .formcontrol {
+                        margin-bottom: 0;
+                        input {
+                            background-image: url(../img/icon-person.svg);
+                        }
+                    }
+                }
+            }
+            .rightBox {
+                margin: 10px;
+                width: 50%;
+                padding: 40px;
+                background-color: $VeryDarkCyan;
+                justify-content: space-between;
+                display: flex;
+                flex-flow: column;
+                border-radius: 15px;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                -ms-border-radius: 15px;
+                -o-border-radius: 15px;
+                label {
+                    color: #fff;
+                    small {
+                        color: $DarkGrayishCyan2;
+                    }
+                }
+                .amount,
+                .total {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                    justify-content: space-between;
+                    align-items: center;
+                    align-content: center;
+                    flex-wrap: nowrap;
+                    margin-bottom: 50px;
+                    .amountR {
+                        font-size: 50px;
+                        color: $StrongCyan;
+                        font-weight: bold;
+                    }
+                }
+                .restButton {
+                    padding: 15px;
+                    background-color: $StrongCyan;
+                    color: $VeryDarkCyan;
+                    text-align: center;
+                    font-size: $Fontsize;
+                    text-decoration: none;
+                    font-weight: bold;
+                    display: block;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    &:hover {
+                        background-color: $LightGrayishCyan1;
+                    }
+                }
+            }
+        }
+    }
+}
