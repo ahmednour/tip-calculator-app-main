@@ -1,0 +1,226 @@
+@import url(reset.scss);
+body {
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  height: 100vh;
+}
+
+body .content {
+  width: 70%;
+  text-align: left;
+}
+
+body .content .title {
+  text-align: center;
+}
+
+body .content .title img {
+  margin: 0 auto 50px;
+}
+
+body .content .calcBox {
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0 5px 5px #c5e4e7;
+          box-shadow: 0 5px 5px #c5e4e7;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+body .content .calcBox .leftBox {
+  width: 50%;
+  color: #5e7a7d;
+  padding: 20px 50px 20px 20px;
+}
+
+body .content .calcBox .leftBox .formcontrol {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+body .content .calcBox .leftBox .formcontrol label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+body .content .calcBox .leftBox .formcontrol input {
+  border: 2px solid #f4fafa;
+  background-color: #f4fafa;
+  height: 35px;
+  padding: 10px;
+  position: relative;
+  direction: rtl;
+  font-size: 24px;
+  color: #00494d;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-image: url("../img/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 20px center;
+}
+
+body .content .calcBox .leftBox .formcontrol input:hover, body .content .calcBox .leftBox .formcontrol input:focus, body .content .calcBox .leftBox .formcontrol input:active, body .content .calcBox .leftBox .formcontrol input:focus-visible {
+  border: 2px solid #26c0ab;
+  cursor: pointer;
+  outline: none;
+}
+
+body .content .calcBox .leftBox .BoxButton .Buttonbody {
+  margin-top: 20px;
+  margin-bottom: 45px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 32% 32% 32%;
+      grid-template-columns: 32% 32% 32%;
+  grid-gap: 15px;
+}
+
+body .content .calcBox .leftBox .BoxButton .Buttonbody a {
+  background-color: #00494d;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+body .content .calcBox .leftBox .BoxButton .Buttonbody a:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+body .content .calcBox .leftBox .BoxButton .Buttonbody a:last-child {
+  background-color: #f4fafa;
+  color: #7f9c9f;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+body .content .calcBox .leftBox .peopleBox .formcontrol {
+  margin-bottom: 0;
+}
+
+body .content .calcBox .leftBox .peopleBox .formcontrol input {
+  background-image: url(../img/icon-person.svg);
+}
+
+body .content .calcBox .rightBox {
+  margin: 10px;
+  width: 50%;
+  padding: 40px;
+  background-color: #00494d;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+body .content .calcBox .rightBox label {
+  color: #fff;
+}
+
+body .content .calcBox .rightBox label small {
+  color: #7f9c9f;
+}
+
+body .content .calcBox .rightBox .amount,
+body .content .calcBox .rightBox .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 50px;
+}
+
+body .content .calcBox .rightBox .amount .amountR,
+body .content .calcBox .rightBox .total .amountR {
+  font-size: 50px;
+  color: #26c0ab;
+  font-weight: bold;
+}
+
+body .content .calcBox .rightBox .restButton {
+  padding: 15px;
+  background-color: #26c0ab;
+  color: #00494d;
+  text-align: center;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+body .content .calcBox .rightBox .restButton:hover {
+  background-color: #c5e4e7;
+}
+/*# sourceMappingURL=main.css.map */
